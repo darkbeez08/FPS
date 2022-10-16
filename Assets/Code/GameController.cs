@@ -3,6 +3,7 @@
 public class GameController : MonoBehaviour
 {
     static GameController m_GameController = null;
+    FPPlayerController m_Player;
     float m_PlayerLife = 1.0f;
 
     private void Start()
@@ -14,6 +15,9 @@ public class GameController : MonoBehaviour
         if(m_GameController == null)
         {
             m_GameController = new GameObject("GameController").AddComponent<GameController>();
+            GameControllerData l_GameControllerData = Resources.Load <GameControllerData>("GameControllerData");
+            m_GameController.m_PlayerLife = l_GameControllerData.m_lifes;
+            Debug.Log("Data loaded with life" + m_GameController.m_PlayerLife);
         }
         return m_GameController;
     }
@@ -33,5 +37,14 @@ public class GameController : MonoBehaviour
     public float GetPlayerLife()
     {
         return m_PlayerLife;
+    }
+
+    public FPPlayerController GetPlayer()
+    {
+        return m_Player;
+    }
+    public void SetPlayer(FPPlayerController Player)
+    {
+        m_Player = Player;
     }
 }

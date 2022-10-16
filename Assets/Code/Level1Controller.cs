@@ -9,6 +9,6 @@ public class Level1Controller : MonoBehaviour
         {
             GameController.GetGameController().SetPLayerLife(0.3f);
             
-        }SceneManager.LoadSceneAsync("Level2Scene");
+        }SceneManager.LoadSceneAsync("Game2");
     }
 }
