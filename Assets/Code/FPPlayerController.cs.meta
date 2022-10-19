@@ -3,7 +3,15 @@ guid: f7bdee7ab097a424a9969025ce1acd22
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_PitchController: {instanceID: 0}
+  - m_CharacterController: {instanceID: 0}
+  - m_Camera: {instanceID: 0}
+  - m_DecalPrefab: {instanceID: 0}
+  - m_Animation: {instanceID: 0}
+  - m_IdleAnimationClip: {fileID: 7400000, guid: 19188bc05416d4549b18f779664e3a55, type: 2}
+  - m_ShootAnimationClip: {fileID: 7400000, guid: ab9dbcbd5b11b6049bab082b98fbb282, type: 2}
+  - m_ReloadAnimationClip: {fileID: 7400000, guid: dd1b9fec107aa134ba2f022217f061fe, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
